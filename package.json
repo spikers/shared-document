@@ -4,7 +4,8 @@
   "description": "Access a shared document.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js --exec ./node_modules/babel-cli/bin/babel-node.js --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/spikers/shared-document/issues"
   },
-  "homepage": "https://github.com/spikers/shared-document#readme"
+  "homepage": "https://github.com/spikers/shared-document#readme",
+  "dependencies": {
+    "express": "4.16.2",
+    "socket.io": "2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
 }
